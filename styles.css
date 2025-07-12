@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #2a4d69;
+    letter-spacing: 2px;
+}
+
+nav {
+    background: #2a4d69;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    margin: 0 20px;
+}
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 18px 0;
+    display: block;
+    transition: color 0.2s;
+}
+.nav-list a:hover {
+    color: #f9d342;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 28px;
+}
+
+#about ul {
+    margin: 10px 0 10px 20px;
+}
+
+#about li {
+    margin-bottom: 4px;
+}
+
+.proof {
+    background: #e9f6ff;
+    border-left: 5px solid #2a4d69;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.quote {
+    font-style: italic;
+    color: #2a4d69;
+    margin-bottom: 12px;
+}
+
+#ballmer-image {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px 0 18px 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.project-title {
+    color: #2a4d69;
+    margin-top: 18px;
+}
+
+.project-link {
+    color: #4178be;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+.project-link:hover {
+    color: #f9d342;
+}
+
+#contact a {
+    color: #4178be;
+    text-decoration: none;
+    font-weight: 500;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 18px 6px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list li {
+        margin: 8px 0;
+    }
+    #ballmer-image {
+        width: 80px;
+    }
+}
