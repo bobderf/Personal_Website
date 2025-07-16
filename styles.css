@@ -1,131 +1,217 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background: #f4f6fa;
-    color: #222;
+/* Make paragraphs look like real paragraphs */
+p {
+    max-width: 700px;
+    margin: 16px auto;
     line-height: 1.7;
-    margin: 0;
-    padding: 0;
+    text-align: left;
+    word-break: break-word;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 2.5em;
-    color: #2a4d69;
-    letter-spacing: 2px;
-}
-
-nav {
-    background: #2a4d69;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.nav-list li {
-    margin: 0 20px;
-}
-.nav-list a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.1em;
-    padding: 18px 0;
-    display: block;
-    transition: color 0.2s;
-}
-.nav-list a:hover {
-    color: #f9d342;
+body{
+    color: #FFFFFF;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #222831;
 }
 
 section {
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
+    min-height: 80vh;          /* makes each section tall enough to center content */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2, h3 {
+    height: 1vh;
+    font-size: 0.5vw;
+    margin: 0;
+    padding: 1em;
+
+}
+
+#top-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #393E46;
+    z-index: 1000;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+}
+
+#top-banner h1 {
+    margin: 0;
+    font-size: 2em;
+    flex: 0 0 auto; /* prevents flex from stretching */
+    color: #FFFFFF;
+}
+
+#top-banner a {
+    background-color: #393E46;
+}
+
+#top-banner a:hover {
+    background-color: #ffffff;
+}
+
+.source a{
+    padding: 1px 1px;;
+    background-color: #222831;
+    font-size: 0.9em;
+    color: gray; /* light yellow */
+    margin-top: 5px;
+}
+
+a {
+    transition:
+        box-shadow 0.3s ease-in-out,
+        transform 0.3s ease-in-out,
+        color 0.3s ease-in-out,
+        border 0.3s ease-in-out,
+        background-color 0.3s ease-in-out,
+        transform 0.1s ease-in-out;
+    transform: translateY(0);
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.027);
+    padding: 16px 8px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    background-color: #00000012;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 8px rgba(0, 0, 0, 0.251);
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+nav{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+    width: auto;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+    justify-items: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 32px auto;
+    justify-content: center;
+}
+
+.skill {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #393E46;
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-    padding: 32px 28px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-#about ul {
-    margin: 10px 0 10px 20px;
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 8px rgba(0, 0, 0, 0.251);
 }
 
-#about li {
-    margin-bottom: 4px;
-}
-
-.proof {
-    background: #e9f6ff;
-    border-left: 5px solid #2a4d69;
-    padding: 18px 22px;
-    margin-bottom: 24px;
-    border-radius: 8px;
-}
-
-.quote {
-    font-style: italic;
-    color: #2a4d69;
+.skill img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
     margin-bottom: 12px;
 }
 
-#ballmer-image {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 10px 0 18px 0;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.skill span {
+    font-size: 1.1em;
+    margin-top: 4px;
 }
 
-.project-title {
-    color: #2a4d69;
-    margin-top: 18px;
+.services-list li{
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+    max-width: 600px;
 }
 
-.project-link {
-    color: #4178be;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.2s;
-}
-.project-link:hover {
-    color: #f9d342;
-}
-
-#contact a {
-    color: #4178be;
-    text-decoration: none;
-    font-weight: 500;
-}
-#contact a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    section {
-        padding: 18px 6px;
+@media (max-width: 768px) {
+    h2, h3 {
+        font-size: 4vw;
     }
-    h1 {
+
+    #top-banner h1 {
         font-size: 1.5em;
     }
+
     .nav-list {
-        flex-direction: column;
+        width: 80%;
     }
-    .nav-list li {
-        margin: 8px 0;
+
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-    #ballmer-image {
-        width: 80px;
+
+    .skill img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .skill span {
+        font-size: 1em;
     }
 }
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 5vw;
+    }
+
+    #top-banner h1 {
+        font-size: 1.2em;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .skill img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .skill span {
+        font-size: 1.1em;
+    }
+}
+

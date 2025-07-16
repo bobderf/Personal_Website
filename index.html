@@ -4,90 +4,131 @@
     <meta charset="UTF-8" />
     <title>Wiesenhofer's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <script src="script.js"></script>
 
-    <h1>Wiesenhofer's Portfolio</h1>
+    <div class="name-page">
+        <h1>Wiesenhofer's Portfolio</h1>
+        <p>Welcome!</p>
+    </div>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <div id="top-banner">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services-skills">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
     <section id="about">
-        <h3>About Me</h3>
-        <p>Hello! I'm Dawson Wiesenhofer from Maryville, Tennessee. 15 years old and a softmore in High School</p>
+        <h1>About Me</h1>
+        <p>I'm Dawson Wiesenhofer from Maryville, Tennessee. 15 years old high school student</p>
         <p>
-            I'm a software and web developer who can build you effective websites and software for you.
+            I'm an aspiring software and mechatronics engineer who is looking to build experience in the field.
             This site is my resume and portfolio for colleges and employers.
         </p>
         <p>
             I have been proggraming since 5th grade and have been working on increasingly complex projects since then.
+            I enjoy proggramming and working on projects because I love the feeling of solving problems and creating something new.
         </p>
         <p>
-            I have experiance in various proggraming languages all very useful.
-            <ul>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>C/C++</li>
-                <li>C#</li>
-                <li>Lua</li>
-            </ul>
-            I am also very egared to learn whatever I can to help you with your needs.
+            While I'm not the most experienced developer, I am eager to learn and grow.
+            I am always looking for new challenges and opportunities to improve my skills.
         </p>
     </section>
 
-    <section id="services">
-        <h2>Services</h2>
-        <div class="proof">
-            <h4>Why Your Business Needs a Website and software</h4>
-            <p class="quote">
-            "The number one benefit of information technology is that it empowers people to do what they want to do. It lets people be creative. It lets people be productive"
-            - Steve Ballmer, Former CEO of Microsoft
-            </p>
-            <ul>
-                <li>37% use an internet search engine to find a store at least once per month</li>
-                <li>91% of customers have visited a store because of an online experience</li>
-                <li>Of the small businesses that have websites, 69% of them are having annual sales of $1,000,000 – $2,490,000</li>
-                <li>According to Google’s 2015 data, 50% of consumers who conduct local searches on their smartphone go to a store within 24 hours, and nearly 20% purchase within a day</li>
-            </ul>
-            <p style="font-size:0.9em; color:gray;">
-                <em>Source: <a href="https://www.rainpos.com/blog/small-business-website-statistics-you-need-to-know-to-increase-in-store-sales" target="_blank">rainpos.com, small business website statistics</a></em>
-            </p>
+    <section id="services-skills">
+        <h1>Services & Skills</h1>
+        <p>
+            Experiance with lots of tools and languages for frontend and backend development.
+            I have made a project with every language and tool I know.
+        </p>
+        <h1>Skills</h1>
+        <p>While it may not look like alot these are very powerful tools that can make anything</p>
+        <div class="skills">
+            <div class="skill">
+                <img src="img/html.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill">
+                <img src="img/c.svg" alt="C">
+                <span>C</span>
+            </div>
+            <div class="skill">
+                <img src="img/CPlusPlus.svg" alt="C++">
+                <span>C++</span>
+            </div>
+            <div class="skill">
+                <img src="img/CSharp.svg" alt="C#">
+                <span>C#</span>
+            </div>
+            <div class="skill">
+                <img src="img/css3.svg" alt="CSS">
+                <span>CSS3</span>
+            </div>
+            <div class="skill">
+                <img src="img/JS.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill">
+                <img src="img/Lua.svg" alt="Lua">
+                <span>Lua</span>
+            </div>
+            <div class="skill">
+                <img src="img/Python.svg" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill">
+                <img src="img/git.svg" alt="Git">
+                <span>Git</span>
+            </div>
+            <div class="skill">
+                <img src="img/pngegg.png" alt="GNU Tools">
+                <span>GNU Tools</span>
+            </div>
         </div>
-        <ul>
-            <li>Custom website design & development</li>
-            <li>Software solutions for small businesses</li>
-            <li>Want something else? just ask.</li>
+        <h1>Services</h1>
+        <ul class="services-list">
+            <li>Web developer</li>
+            <li>Software developer</li>
+            <li>Unpaid internship related to engineering</li>
+            <li>If you're just bored and want someone to talk too</li>
         </ul>
-        <p>I can give you software and websites cheaper than any big company and you are supporting a small developer.</p>
-        any questions? <a href="#contact">Contact me</a> to discuss your solution.
+        <p>
+            I can give you software and websites cheaper than any big company and you are supporting a small developer.
+            The price for the initiall development is free! As long as you leave a review and give me credit for the work.
+        </p>
+        <a href="#contact">Hire me</a>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <h4 class="project-title">Padre</h4>
-            <p>Padre is a project that communicate messages form clients using a RasberryPi as a server safely communicateing</p>
+        <h1>Projects</h1>
+        <h1 class="project-title">Padre</h1>
+            <p>
+                Padre is a project that communicate messages between clients using a RasberryPi as a server.
+                The project uses mainly C for the language and Make for the build system
+            </p>
             <a class="project-link" href="https://github.com/bobderf/padre" target="_blank">Padre Repositorty on Github</a>
-        <h4 class="project-title">My Portfolio</h4>
-            <p>Padre is a project that communicate messages form clients using a RasberryPi as a server safely communicateing</p>
-            <a class="project-link" href="https://github.com/bobderf/padre" target="_blank">Padre Repositorty on Github</a>
+        <h1 class="project-title">My Portfolio</h1>
+            <p>My personal portfolio is a website ment to demonstrate my skill in Computer Science, software development, and web development</p>
+            <a class="project-link" href="https://github.com/bobderf/Personal_Website" target="_blank">My personal portfolio Repositorty on Github</a>
         <!-- Add more projects here -->
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Let's work together! Reach out via phone or email:</p>
+        <h1>Contacts</h1>
+        <p>Reach out to me if you are interested</p>
         <a href="tel:+18657053435">+1 (865) 705 3435</a><br>
         <a href="mailto:Dawson.Wiesenhofer@gmail.com">Dawson.Wiesenhofer@gmail.com</a>
         <!-- Optionally add a contact form here -->
     </section>
+    </main>
 </body>
 </html>
